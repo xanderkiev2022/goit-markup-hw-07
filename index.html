@@ -67,10 +67,7 @@
 
     <main>
       <section class="hero section">
-        <h1 class="hero__title">
-          Ефективні рішення для <br />
-          вашого бізнесу
-        </h1>
+        <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
         <button data-modal-open type="button" class="hero__btn">Замовити послугу</button>
       </section>
 
@@ -78,7 +75,7 @@
 
       <section class="advantages section">
         <div class="container">
-          <h2 class="title-hide">Чому нас обирають</h2>
+          <h2 class="hidden">Чому нас обирають</h2>
           <ul class="advantages__list">
             <li class="advantages__item">
               <div class="advantages__svg">
@@ -155,7 +152,7 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img src="./images/igor-d.jpg" alt="Ігор Дем'яненко" width="270" /><br />
+              <img src="./images/igor-d.jpg" alt="Ігор Дем'яненко" width="270" />
               <div>
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__position">Product Designer</p>
@@ -192,7 +189,7 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/olha-r.jpg" alt="Ольга Рєпіна" width="270" /><br />
+              <img src="./images/olha-r.jpg" alt="Ольга Рєпіна" width="270" />
               <div>
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__position">Frontend Developer</p>
@@ -229,7 +226,7 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/mykola-t.jpg" alt="Микола Тарасов" width="270" /><br />
+              <img src="./images/mykola-t.jpg" alt="Микола Тарасов" width="270" />
               <div>
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__position">Marketing</p>
@@ -266,7 +263,7 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/myhailo-e.jpg" alt="Михайло Єрмаков" width="270" /><br />
+              <img src="./images/myhailo-e.jpg" alt="Михайло Єрмаков" width="270" />
               <div>
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__position">UI Designer</p>
@@ -486,7 +483,12 @@
         </ul>
 
         <label class="modal__field--confirmation">
-          <input class="modal__checkbox" type="checkbox" name="confirm" value="confirmation" />
+          <input
+            class="modal__checkbox hidden"
+            type="checkbox"
+            name="confirm"
+            value="confirmation"
+          />
           <span class="modal__check">
             <svg class="">
               <use href="./images/icons.svg#check"></use>
