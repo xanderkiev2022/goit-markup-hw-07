@@ -44,6 +44,18 @@ ul {
     padding: 0;
 }
 
+li {
+    line-height: initial;
+}
+
+button{
+    cursor: pointer;
+}
+
+address{
+    font-style: normal;
+}
+
 a {
     text-decoration: none;
 }
@@ -222,7 +234,6 @@ a {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
-    cursor: pointer;
 
     border: none;
 
@@ -585,7 +596,6 @@ border: 1px solid var(--accent-color);
     color: var(--white-color);
     letter-spacing: 0.06em;
     
-    cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -628,7 +638,6 @@ border: 1px solid var(--accent-color);
 .filter__btn:focus {
     background-color: var(--accent-color);
     color: var(--white-color);
-    cursor: pointer;
     box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -746,7 +755,6 @@ border: 1px solid var(--accent-color);
     background-color: var(--white-color);
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
-    cursor: pointer;
 }
 .close-svg {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -973,8 +981,6 @@ border: 1px solid var(--accent-color);
     line-height: 1.86;
     color: var(--white-color);
     letter-spacing: 0.06em;
-
-    cursor: pointer;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
