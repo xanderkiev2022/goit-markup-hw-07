@@ -208,7 +208,7 @@ a {
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
-.hero__button {
+.hero__btn {
     background-color: var(--accent-color);
     min-width: 216px;
     padding: 10px 32px;     
@@ -893,7 +893,7 @@ border: 1px solid var(--accent-color);
     border-color: var(--accent-color);
 }
 
-.check {
+.modal__check {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -913,7 +913,7 @@ border: 1px solid var(--accent-color);
     cursor: pointer;
 }
 
-.checkbox { /* робимо її невидемою на всіх браузерах */
+.modal__checkbox { /* робимо її невидемою на всіх браузерах */
     position: absolute;
     width: 1px;
     height: 1px;
@@ -926,7 +926,7 @@ border: 1px solid var(--accent-color);
     overflow: hidden;
 }
 
-.checkbox:checked +.check{
+.modal__checkbox:checked +.modal__check{
     background-color: var(--accent-color);
     border-color: transparent;
 }
@@ -947,7 +947,7 @@ border: 1px solid var(--accent-color);
     color: var(--submain-text-color);
 }
 
-.modal__field--confirmation .agreement {
+.modal__field--confirmation .modal__agreement {
     color: var(--accent-color);
     letter-spacing: 0.03em;
 }
@@ -983,8 +983,8 @@ border: 1px solid var(--accent-color);
 .submit__btn:focus,
 .subscribe__btn:hover,
 .subscribe__btn:focus,
-.hero__button:hover,
-.hero__button:focus{
+.hero__btn:hover,
+.hero__btn:focus{
     background: #188CE8;
 }
 
