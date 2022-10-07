@@ -51,4 +51,9 @@
     &__item {
         background: rgba(255, 255, 255, 0.1);
         }
+
+    &__item:hover,
+    &__item:focus {
+        background-color: var(--accent-color);
+    }
 }
