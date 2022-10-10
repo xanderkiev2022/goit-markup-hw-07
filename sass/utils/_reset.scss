@@ -1,8 +1,7 @@
 .container {
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
     padding: 0 15px;
-    width: 1200px;
+    max-width: 1200px;
 }
 
 h1,
@@ -31,9 +30,9 @@ address {
     font-style: normal;
 }
 
-a {
-    text-decoration: none;
-}
+// a {
+//     text-decoration: none;
+// }
 
 .section {
     padding-top: 94px;
@@ -42,6 +41,7 @@ a {
 
 img {
     display: block;
+    margin: 0;
 }
 
 .hidden {

@@ -8,8 +8,8 @@
     width: 100%;
     height: 100%;
     background-color: var(--backdrop);
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    /* фон+вікно виринає м"яко */
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                hidden 250ms cubic-bezier(0.4, 0, 0.2, 1);    /* фон+вікно виринає м"яко */
 }
 
 .backdrop.is-hidden {
@@ -67,52 +67,56 @@
 
 .modal {
     position: relative;
+
+    h2 {
+            font-family: 'Roboto';
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 1.15;
+            text-align: center;
+            letter-spacing: 0.03em;
+            color: var(--main-text-color);
+    
+            padding-bottom: 30px;
+        }
+
+    &__list:not(:last-child) {
+            display: block;
+            margin-bottom: 28px;
+        }
+
+    &__field {
+        position: relative;
+        display: flex;
+        align-items: center;    
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__cover {
+        position: relative;
+        width: 100%;
+    }
+
+    &__input {
+        box-sizing: border-box;
+        width: 100%;
+        height: 40px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        padding: 11px 12px 11px 42px;
+        outline: transparent;                   /* обводка field прозора*/
+        cursor: pointer;
+            
+        transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
-.modal h2 {
-    font-family: 'Roboto';
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.15;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--main-text-color);
-
-    padding-bottom: 30px;
-}
-
-.modal__field {
-    position: relative;
-
-    display: flex;
-    align-items: center;
-
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-    /* outline: 1px solid black; */
-}
-
-.modal__input {
-    box-sizing: border-box;
-    width: 100%;
-    height: 40px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    margin-bottom: 28px;
-    padding: 11px 12px 11px 42px;
-    outline: transparent;
-    /* обводка field прозора*/
-    cursor: pointer;
-
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .modal__field--comment .modal__input {
-    width: 448px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    padding: 12px 16px;
+    padding: 11px 16px;
     margin-bottom: 20px;
     resize: none;
 
@@ -129,18 +133,18 @@
 .modal__svg {
     position: absolute;
 
-    top: 0;
+    top: 50%;
     left: 0;
+    transform: translateY(-50%);
+    margin-left: 11px;
     align-items: center;
 
     width: 18px;
     height: 18px;
-    margin: 10px 15px 11px 11px;
 }
 
 .modal__label {
     position: absolute;
-    /* display: block; */
 
     top: -20px;
     left: 0;
@@ -208,6 +212,7 @@
 .modal__field--confirmation .modal__agreement {
     color: var(--accent-color);
     letter-spacing: 0.03em;
+    text-decoration-skip-ink: none;
 }
 
 .submit__btn {
@@ -243,3 +248,4 @@
 .hero__btn:focus {
     background: #188CE8;
 }
+
