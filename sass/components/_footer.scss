@@ -1,25 +1,18 @@
-.footer {
-    // display: flex;
+.footer {    
+    padding-bottom: 60px;
     background-color: var(--hero-footer-background-color);
 
     .container {
         display: flex;
-        justify-content: space-between;
-        // margin-bottom: 60px;
         }
+
     .logo {
         display: inline-block;
-        margin-top: 60px;
-        margin-bottom: 20px;
-    
+        margin-bottom: 20px;    
         color: var(--white-color);
         }
 
 /* Footer - тел,емейл,адреса */
-
-    &__list {
-        padding-bottom: 60px;
-    }
 
     &__contact {
         display: inline-block;
@@ -50,17 +43,24 @@
     }
 }
 
+.contact {
+    padding-top: 60px;
+    margin-left: 0;    
+    width: 231px;
+}
+
 /* Footer - 2й стовпчик */
 
 .follow {
+    padding-top: 72px;
+    margin-left: 70px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-color);
-
-    margin-top: 72px;
 
     .social-media {
         margin-top: 20px;
@@ -70,15 +70,15 @@
 /* Footer - 3й стовпчик */
 
 .subscribe {
+    padding-top: 72px;
+    margin-left: 93px;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-color);
-        
-    margin-top: 72px;
-    margin-left: 93px;
 
     &__container {
         position: relative;

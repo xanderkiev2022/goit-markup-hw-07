@@ -447,21 +447,17 @@ img {
 }
 
 .footer {
+  padding-bottom: 60px;
   background-color: var(--hero-footer-background-color);
   /* Footer - тел,емейл,адреса */
 }
 .footer .container {
   display: flex;
-  justify-content: space-between;
 }
 .footer .logo {
   display: inline-block;
-  margin-top: 60px;
   margin-bottom: 20px;
   color: var(--white-color);
-}
-.footer__list {
-  padding-bottom: 60px;
 }
 .footer__contact {
   display: inline-block;
@@ -486,15 +482,22 @@ img {
   color: var(--accent-color);
 }
 
+.contact {
+  padding-top: 60px;
+  margin-left: 0;
+  width: 231px;
+}
+
 /* Footer - 2й стовпчик */
 .follow {
+  padding-top: 72px;
+  margin-left: 70px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
-  margin-top: 72px;
 }
 .follow .social-media {
   margin-top: 20px;
@@ -502,14 +505,14 @@ img {
 
 /* Footer - 3й стовпчик */
 .subscribe {
+  padding-top: 72px;
+  margin-left: 93px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
-  margin-top: 72px;
-  margin-left: 93px;
 }
 .subscribe__container {
   position: relative;
